@@ -16,7 +16,10 @@ import {
   PixelShoppingCart,
   PixelInfo,
   PixelMail,
-  PixelSettings
+  PixelSettings,
+  PixelFlask,
+  PixelTestTube,
+  PixelBeaker
 } from '@/components/PixelIcon'
 
 export default function Home() {
@@ -39,9 +42,9 @@ export default function Home() {
     { icon: <PixelShoppingCart size={32} color="#ffffff" />, label: 'Shop', window: 'Shop', rotation: 'rotate-medium' },
     { icon: <PixelHeart size={32} color="#ffffff" />, label: 'Favorites', window: 'Favorites', rotation: 'rotate-fast' },
     { icon: <PixelMoon size={32} color="#ffffff" />, label: 'Sleep', window: 'Sleep', rotation: 'rotate-reverse' },
-    { icon: <PixelPill size={32} color="#ffffff" />, label: 'Medication', window: 'Medication', rotation: 'rotate-slow' },
-    { icon: <PixelGlobe size={32} color="#ffffff" />, label: 'Internet', window: 'Internet', rotation: 'rotate-medium' },
-    { icon: <PixelMapPin size={32} color="#ffffff" />, label: 'Go Out', window: 'GoOut', rotation: 'rotate-fast' },
+    { icon: <PixelFlask size={32} color="#ffffff" />, label: 'Lab', window: 'Lab', rotation: 'rotate-slow' },
+    { icon: <PixelTestTube size={32} color="#ffffff" />, label: 'Experiments', window: 'Experiments', rotation: 'rotate-medium' },
+    { icon: <PixelBeaker size={32} color="#ffffff" />, label: 'Research', window: 'Research', rotation: 'rotate-fast' },
     { icon: <PixelInfo size={32} color="#ffffff" />, label: 'About', window: 'About', rotation: 'rotate-slow' },
     { icon: <PixelMail size={32} color="#ffffff" />, label: 'Contact', window: 'Contact', rotation: 'rotate-reverse' },
     { icon: <PixelSettings size={32} color="#ffffff" />, label: 'Settings', window: 'Settings', rotation: 'rotate-medium' }

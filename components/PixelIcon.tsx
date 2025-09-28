@@ -96,3 +96,74 @@ export const PixelPill = ({ size = 32, className = '', color = '#ffffff' }: Pixe
     <rect x="12" y="16" width="8" height="2" fill={color}/>
   </svg>
 )
+
+export const PixelFlask = ({ size = 32, className = '', color = '#ffffff' }: PixelIconProps) => (
+  <svg width={size} height={size} viewBox="0 0 32 32" className={className}>
+    {/* Flask body - main rectangle */}
+    <rect x="12" y="8" width="8" height="16" fill={color} stroke="#000000" strokeWidth="1"/>
+    
+    {/* Flask neck */}
+    <rect x="14" y="4" width="4" height="4" fill={color} stroke="#000000" strokeWidth="1"/>
+    
+    {/* Flask base */}
+    <rect x="10" y="24" width="12" height="4" fill={color} stroke="#000000" strokeWidth="1"/>
+    
+    {/* Liquid inside flask */}
+    <rect x="13" y="20" width="6" height="4" fill="#000000"/>
+    
+    {/* Bubbles/particles */}
+    <rect x="13" y="10" width="2" height="2" fill="#000000"/>
+    <rect x="17" y="12" width="2" height="2" fill="#000000"/>
+    <rect x="15" y="14" width="2" height="2" fill="#000000"/>
+    <rect x="13" y="16" width="2" height="2" fill="#000000"/>
+    <rect x="17" y="18" width="2" height="2" fill="#000000"/>
+    
+    {/* Flask stand/base details */}
+    <rect x="8" y="28" width="16" height="2" fill={color} stroke="#000000" strokeWidth="1"/>
+    <rect x="9" y="26" width="2" height="2" fill="#000000"/>
+    <rect x="21" y="26" width="2" height="2" fill="#000000"/>
+  </svg>
+)
+
+export const PixelTestTube = ({ size = 32, className = '', color = '#ffffff' }: PixelIconProps) => (
+  <svg width={size} height={size} viewBox="0 0 32 32" className={className}>
+    {/* Test tube body */}
+    <rect x="14" y="6" width="4" height="20" fill={color} stroke="#000000" strokeWidth="1"/>
+    
+    {/* Test tube opening */}
+    <rect x="13" y="4" width="6" height="2" fill={color} stroke="#000000" strokeWidth="1"/>
+    
+    {/* Test tube base */}
+    <rect x="12" y="26" width="8" height="4" fill={color} stroke="#000000" strokeWidth="1"/>
+    
+    {/* Liquid levels */}
+    <rect x="15" y="20" width="2" height="6" fill="#000000"/>
+    <rect x="15" y="16" width="2" height="2" fill="#000000"/>
+    <rect x="15" y="12" width="2" height="2" fill="#000000"/>
+    
+    {/* Bubbles */}
+    <rect x="14" y="8" width="1" height="1" fill="#000000"/>
+    <rect x="17" y="10" width="1" height="1" fill="#000000"/>
+    <rect x="15" y="14" width="1" height="1" fill="#000000"/>
+  </svg>
+)
+
+export const PixelBeaker = ({ size = 32, className = '', color = '#ffffff' }: PixelIconProps) => (
+  <svg width={size} height={size} viewBox="0 0 32 32" className={className}>
+    {/* Beaker body - trapezoid shape */}
+    <path d="M8 24 L8 8 L12 4 L20 4 L24 8 L24 24 L8 24 Z" fill={color} stroke="#000000" strokeWidth="1"/>
+    
+    {/* Liquid inside */}
+    <rect x="10" y="18" width="12" height="6" fill="#000000"/>
+    <rect x="10" y="14" width="12" height="2" fill="#000000"/>
+    <rect x="10" y="10" width="12" height="2" fill="#000000"/>
+    
+    {/* Measurement marks */}
+    <rect x="9" y="6" width="1" height="1" fill="#000000"/>
+    <rect x="22" y="6" width="1" height="1" fill="#000000"/>
+    <rect x="9" y="10" width="1" height="1" fill="#000000"/>
+    <rect x="22" y="10" width="1" height="1" fill="#000000"/>
+    <rect x="9" y="14" width="1" height="1" fill="#000000"/>
+    <rect x="22" y="14" width="1" height="1" fill="#000000"/>
+  </svg>
+)
