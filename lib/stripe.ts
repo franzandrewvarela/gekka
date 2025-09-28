@@ -1,13 +1,20 @@
 // Stripe configuration for future payment integration
 // This file is prepared for when you're ready to add Stripe payments
 
-import Stripe from 'stripe'
+// Conditional Stripe import - only when Stripe is installed
+let stripe: any = null
 
-// Initialize Stripe with your secret key
-// Replace with your actual Stripe secret key from environment variables
-const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!, {
-  apiVersion: '2023-10-16',
-})
+if (typeof window === 'undefined') {
+  try {
+    const Stripe = require('stripe')
+    stripe = new Stripe(process.env.STRIPE_SECRET_KEY || 'sk_test_placeholder', {
+      apiVersion: '2023-10-16',
+    })
+  } catch (error) {
+    // Stripe not installed yet, will be available when you add it
+    console.log('Stripe not installed yet - this is expected for now')
+  }
+}
 
 export default stripe
 
